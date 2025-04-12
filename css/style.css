@@ -1,9 +1,9 @@
 /* =======================================================================
 Template Name: B-Space Single Page Template
-Author:  SmartEye Technologies
-Author URI: www.smart-eye.in
+Author: Ammar
+Author URI: ammar-khan.com
 Version: 1.0
-coder name:Prabin Raja
+coder name: Ammar Khan
 Description: This Template is created for web template
 
 ======================================================================= */
@@ -243,6 +243,10 @@ body {
   right: 74% !important;
   width: 17% !important;
 }
+.profile-cover h4{
+  font-size: 16px;
+  text-align: left;
+}
 .social-title h3:before {
   right: 68% !important;
   width: 20% !important;
@@ -321,7 +325,12 @@ i.popup:hover:after {
     max-height: 200px;
     padding: .4em;
   }
-
+/* Target list items within the popover body */
+.popover-body ul > li {
+  list-style-type: disc !important;  /* Use 'disc' (filled circle), 'circle' (hollow), or 'square' */
+  display: list-item;             /* Ensure it behaves like a list item */
+  /* Make sure there's space for the bullet - padding added via 'pl-3' on the <ul> in the HTML */
+}
 @media screen and (max-width: 450px) {
   .container-fluid {
     padding: 5px;
@@ -451,13 +460,15 @@ i.popup:hover:after {
  }
  @media(min-width:992px) {
   .tracking-item {
-   margin-left:10rem
+   margin-left:13.5rem
   }
   .tracking-item .tracking-date {
-   position:absolute;
-   left:-10rem;
-   width:7.5rem;
-   text-align:right
+    position: absolute;
+    left: -13rem;
+    width: 10.5rem;
+    margin-top: 10px;
+    text-align: right;
+    vertical-align: middle;
   }
   .tracking-item .tracking-date span {
    display:block
